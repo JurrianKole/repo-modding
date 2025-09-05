@@ -25,16 +25,6 @@ namespace JurrianMod
         {
             _events.Add(new HeavyFeetEvent(_logger));
         }
-
-        public void RegisterAudioEvents(
-            string filePath,
-            float duration,
-            float gain,
-            bool loop,
-            bool alsoLocalPlayback)
-        {
-            _events.Add(new KaraokeEvent(_logger, filePath, duration, gain, loop, alsoLocalPlayback));
-        }
     
         public IEnumerator RunRandomEvent()
         {
